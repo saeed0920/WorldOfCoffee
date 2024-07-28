@@ -9,13 +9,18 @@
     }
   ],
   "compilerOptions": {
+    "allowJs": false,
+    "composite": true,
+    "noEmit": false,
     "typeRoots": [
       "./node_modules/@types",
-      "./node_modules/vite-plugin-eslint/dist"
+      "./node_modules/vite-plugin-eslint/*"
     ],
-    "baseUrl": ".",
+    "baseUrl": "./src",
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["./src/*"]
     }
-  }
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
+  //
 }

@@ -1,3 +1,6 @@
+/* eslint-env node */
+require("@rushstack/eslint-patch/modern-module-resolution");
+
 module.exports = {
   root: true,
   env: { browser: true, es2021: true, node: true },
@@ -21,6 +24,7 @@ module.exports = {
   plugins: ["react", "@typescript-eslint", "prettier", "react-refresh"],
   rules: {
     "no-unused-vars": ["warn"],
+    "@typescript-eslint/ban-ts-comment": "warn",
     "prettier/prettier": "error",
     "react-refresh/only-export-components": [
       "warn",

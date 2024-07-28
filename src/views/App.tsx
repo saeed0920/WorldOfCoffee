@@ -1,16 +1,11 @@
 import { useState } from "react";
-import viteLogo from "/vite.svg";
+//import index from "@/views/home/index.tsx";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-      </div>
       <h1 className="text-3xl font-bold text-red-400">Vite + React</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
