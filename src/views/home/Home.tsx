@@ -1,7 +1,10 @@
+import Navbar from "./Navbar";
+
 function Home() {
   return (
     <div>
-      <h1>Hi</h1>
+      <Navbar />
+      <h1>Hi Im Home</h1>;
     </div>
   );
 }
