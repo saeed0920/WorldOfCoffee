@@ -4,6 +4,7 @@
 
 ## Checklist before requesting a review
 
-- [ ] pnpm prettier write .
+- [ ] pnpm prettier --check .
+- [ ] pnpm prettier --write .
 - [ ] pnpm lint --fix
 - [ ] pnpm build
