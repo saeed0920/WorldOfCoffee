@@ -1,6 +1,6 @@
+import eslint from "vite-plugin-eslint";
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
-import eslint from "vite-plugin-eslint";
 import { fileURLToPath, URL } from "url";
 
 // https://vitejs.dev/config/
@@ -14,6 +14,8 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),
+      "@assets": fileURLToPath(new URL("./src/assets", import.meta.url)),
+      "@views": fileURLToPath(new URL("./src/views", import.meta.url)),
     },
   },
 });
