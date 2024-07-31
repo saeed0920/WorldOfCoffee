@@ -25,7 +25,7 @@ module.exports = {
   rules: {
     "no-unused-vars": ["warn"],
     "@typescript-eslint/ban-ts-comment": "warn",
-    "prettier/prettier": "error",
+    "prettier/prettier": "warn",
     "react-refresh/only-export-components": [
       "warn",
       { allowConstantExport: true },

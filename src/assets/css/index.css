@@ -1,3 +1,93 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+
+
+
+a{
+  padding: 0;
+}
+
+
+
+.header{background: url('/header/coffee_image.jpg');
+    background-size: cover;
+    background-position: 50% 50%; /* Center the image, can be adjusted with percentages */
+    background-repeat: no-repeat;
+
+}
+.linav{
+    color: chocolate;
+}
+/* 
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;}
+  
+nav a {
+color: inherit;
+text-decoration: none;
+}
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;}
+nav li {
+margin: 0 2rem;
+}
+
+
+nav a::after {
+content: '';
+position: absolute;
+    
+    width: 100%;
+    height: 0.15em;
+    background-color: rgb(151, 104, 49);
+    opacity: 1;
+
+    transition: opacity 450ms, transform 450ms;
+  }
+nav a:hover::after,
+nav a:focus::after {
+    opacity: 1;
+    transform: translate3d(0, 0.2em, 0);
+  }
+
+nav li a {
+overflow: hidden;
+}
+  
+nav li a::after {
+    opacity: 1;
+    transform: translate3d(-100%, 0, 0);
+  }
+  
+nav li a:hover::after,
+nav li a:focus::after{
+    transform: translate3d(0, 0, 0);
+  }
+
+nav li a::after {
+    opacity: 1;
+    transform: scale(0);
+    transform-origin: center;
+  }
+  
+nav li a:hover::after,
+nav li a:focus::after{transform: scale(1);
+  }
+nav a:hover{
+    color: rgba(180, 173, 166, 0.656);
+   
+} */
+.signin_button:hover{
+    background-color: rgb(88, 82, 72);
+
+}

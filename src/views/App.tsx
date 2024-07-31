@@ -1,10 +1,10 @@
-import Home from "@/views/home/Home.tsx";
+import Home from "./home/Home";
 
 function App() {
   return (
-    <>
+    <div className="h-screen w-screen">
       <Home />
-    </>
+    </div>
   );
 }
 
