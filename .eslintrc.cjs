@@ -9,8 +9,6 @@ module.exports = {
     "plugin:@typescript-eslint/recommended",
     "plugin:react-hooks/recommended",
     "plugin:react/recommended",
-    "plugin:prettier/recommended",
-    "prettier",
   ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
@@ -21,11 +19,10 @@ module.exports = {
     sourceType: "module",
   },
   ignorePatterns: ["dist", ".eslintrc.cjs"],
-  plugins: ["react", "@typescript-eslint", "prettier", "react-refresh"],
+  plugins: ["react", "@typescript-eslint", , "react-refresh"],
   rules: {
     "no-unused-vars": ["warn"],
     "@typescript-eslint/ban-ts-comment": "warn",
-    "prettier/prettier": "error",
     "react-refresh/only-export-components": [
       "warn",
       { allowConstantExport: true },
