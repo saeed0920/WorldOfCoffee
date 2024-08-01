@@ -1,28 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+/*! Should Import before the tailwind stuff */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-
-
-
-
-
-a{
+a {
   padding: 0;
 }
 
-
-
-.header{background: url('/header/coffee_image.jpg');
-    background-size: cover;
-    background-position: 50% 50%; /* Center the image, can be adjusted with percentages */
-    background-repeat: no-repeat;
-
+.header {
+  background: url("/header/coffee_image.jpg");
+  background-size: cover;
+  background-position: 50% 50%; /* Center the image, can be adjusted with percentages */
+  background-repeat: no-repeat;
 }
-.linav{
-    color: chocolate;
+.linav {
+  color: chocolate;
 }
 /* 
 nav ul {
@@ -87,7 +82,6 @@ nav a:hover{
     color: rgba(180, 173, 166, 0.656);
    
 } */
-.signin_button:hover{
-    background-color: rgb(88, 82, 72);
-
+.signin_button:hover {
+  background-color: rgb(88, 82, 72);
 }
