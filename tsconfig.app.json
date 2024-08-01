@@ -28,7 +28,9 @@
     "paths": {
       "@/*": ["./src/*"],
       "@assets/*": ["./src/assets/*"],
-      "@views/*": ["./src/views/*"]
+      "@views/*": ["./src/views/*"],
+      "@public/*": ["./public/*"]
+
     }
   },
   "include": ["src", "./global.d.ts"]

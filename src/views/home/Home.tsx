@@ -1,10 +1,11 @@
+import HomeIntro from "./HomeIntro";
 import Navbar from "./Navbar";
 
 function Home() {
   return (
-    <div>
+    <div className="w-full  px-8  gap-4 h-1/2  header flex flex-col lg:px-20 ">
       <Navbar />
-      <h1>Hi Im Home</h1>;
+      <HomeIntro />
     </div>
   );
 }
