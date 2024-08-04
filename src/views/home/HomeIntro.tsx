@@ -1,15 +1,15 @@
-import navbutton from "@/Components/Button/navbutton";
+import navButton from "@/Components/Button/navButton";
+import { useTranslation } from "react-i18next";
 
 const HomeIntro = () => {
+  const { t } = useTranslation();
+
   return (
-    <div className=" flex flex-col gap-6  w-1/2 text-white playfair ">
-      <h1 className="text-xl flex h-fit whitespace-nowrap	">We’ve got your morning covered with</h1>
-      <h2 className="clicker text-9xl ">Coffee</h2>
-      <article className=" text-xl playfair  flex h-1/4 w-4/5 overflow-y-hidden">
-        It is best to start your day with a cup of coffee. Discover the best flavours coffee you will ever have. We provide the best for our
-        customers.
-      </article>
-      <div className="mt-4">{navbutton("Order Now")}</div>
+    <div className=" flex flex-col gap-2 w-1/2 md:w-full text-white playfair pb-4">
+      <h1 className="text-xl md:text-lg ph:text-base flex h-fit whitespace-nowrap	"> {t("home_header")}</h1>
+      <h2 className="clicker text-[14rem] lg:text-[11rem] md:text-[9rem] ph:text-[7rem]"> {t("coffee")}</h2>
+      <article className=" text-xl md:text-lg ph:text-base playfair  flex h-1/4 w-4/5 overflow-y-hidden">{t("home_sub")}</article>
+      <div className="mt-4">{navButton("header_btn")}</div>
     </div>
   );
 };

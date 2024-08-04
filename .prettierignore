@@ -5,3 +5,4 @@ dist
 dist-ssr
 .vscode
 tsconfig.*
+pnpm-lock.yaml

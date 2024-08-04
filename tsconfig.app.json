@@ -31,7 +31,8 @@
       "@views/*": ["./src/views/*"],
       "@public/*": ["./public/*"]
 
-    }
+    },
+    "typeRoots" : ["node_modules/@types", "src/types"]
   },
   "include": ["src", "./global.d.ts"]
 }
