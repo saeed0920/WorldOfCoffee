@@ -11,10 +11,6 @@ a {
 }
 
 .header {
-  background: url("/header/coffee_image.jpg");
-  background-size: cover;
-  background-position: 50% 50%; /* Center the image, can be adjusted with percentages */
-  background-repeat: no-repeat;
 }
 .linav {
   color: chocolate;
