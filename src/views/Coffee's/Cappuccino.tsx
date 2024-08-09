@@ -1,4 +1,5 @@
 import Cappu from "@public/Images/Cappu.jpg";
+//This Compo it might be updated So... tell me then change it -_-
 function Cappuccino() {
   return (
     <div className="flex flex-col border-2 border-coffee-brown pb-14" style={{ backgroundColor: "wheat" }}>
