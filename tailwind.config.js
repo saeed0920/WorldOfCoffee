@@ -3,6 +3,7 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    colors: { "coffee-brown": "#603809", "late-white": "#F9C06A" },
     extend: {},
     screens: {
       xl: { max: "81.25em" },

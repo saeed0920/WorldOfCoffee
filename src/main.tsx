@@ -7,8 +7,6 @@ import "./i18";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <div>
-      <App />
-    </div>
+    <App />
   </React.StrictMode>,
 );
