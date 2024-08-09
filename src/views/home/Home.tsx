@@ -1,3 +1,4 @@
+import { Discover } from "./Discover";
 import HomeIntro from "./HomeIntro";
 import Navbar from "./Navbar";
 import coffee_image from "@public/header/coffee_image.jpg";
@@ -11,6 +12,7 @@ function Home() {
       />
       <Navbar />
       <HomeIntro />
+      <Discover />
     </div>
   );
 }
