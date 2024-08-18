@@ -1,15 +1,11 @@
-import Home from "@/views/home/Home";
-
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Outlet, RouterProvider } from "react-router-dom";
+import router from "@/router/router";
 
 function App() {
   return (
     <>
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
-      </Router>
+      <RouterProvider router={router} />
+      <Outlet />
     </>
   );
 }
