@@ -1,0 +1,67 @@
+{
+  "coffees": [
+    {
+      "name": "Espresso",
+      "description": "A strong and rich coffee, typically served in a small cup. It forms the base for many other coffee drinks.",
+      "origin": "Italy",
+      "caffeineContent": "High",
+      "servingSize": "30-50ml",
+      "ingredients": ["Finely ground coffee beans", "Hot water"],
+      "flavorProfile": "Bold, concentrated, with a thick crema on top."
+    },
+    {
+      "name": "Latte",
+      "description": "A smooth, milky coffee made with one part espresso and three parts steamed milk, often topped with a small amount of foam.",
+      "origin": "Italy",
+      "caffeineContent": "Medium",
+      "servingSize": "240ml",
+      "ingredients": ["Espresso", "Steamed milk", "Milk foam"],
+      "flavorProfile": "Creamy, mild, with a subtle coffee flavor."
+    },
+    {
+      "name": "Cappuccino",
+      "description": "A balanced coffee drink consisting of equal parts espresso, steamed milk, and milk foam, often topped with cocoa powder or cinnamon.",
+      "origin": "Italy",
+      "caffeineContent": "Medium",
+      "servingSize": "180ml",
+      "ingredients": ["Espresso", "Steamed milk", "Milk foam"],
+      "flavorProfile": "Rich, creamy, with a strong coffee flavor and a velvety texture."
+    },
+    {
+      "name": "Americano",
+      "description": "A coffee drink made by diluting an espresso with hot water, resulting in a similar strength to drip coffee but with a different flavor profile.",
+      "origin": "USA",
+      "caffeineContent": "Medium",
+      "servingSize": "240ml",
+      "ingredients": ["Espresso", "Hot water"],
+      "flavorProfile": "Smooth, mild, with a slightly bitter taste."
+    },
+    {
+      "name": "Mocha",
+      "description": "A chocolate-flavored variant of a caffe latte, combining espresso, steamed milk, and chocolate syrup or cocoa powder, often topped with whipped cream.",
+      "origin": "Yemen",
+      "caffeineContent": "Medium",
+      "servingSize": "240ml",
+      "ingredients": ["Espresso", "Steamed milk", "Chocolate syrup or cocoa powder", "Whipped cream (optional)"],
+      "flavorProfile": "Sweet, chocolatey, with a rich coffee undertone."
+    },
+    {
+      "name": "Macchiato",
+      "description": "A coffee drink made with espresso 'stained' with a small amount of milk or milk foam. The name 'macchiato' means 'stained' or 'spotted' in Italian.",
+      "origin": "Italy",
+      "caffeineContent": "High",
+      "servingSize": "30-60ml",
+      "ingredients": ["Espresso", "Milk or milk foam"],
+      "flavorProfile": "Strong, bold, with a hint of creaminess."
+    },
+    {
+      "name": "Flat White",
+      "description": "A coffee drink consisting of a shot of espresso topped with a thin layer of steamed milk, offering a strong coffee flavor with a creamy texture.",
+      "origin": "Australia",
+      "caffeineContent": "Medium",
+      "servingSize": "180ml",
+      "ingredients": ["Espresso", "Steamed milk"],
+      "flavorProfile": "Smooth, velvety, with a strong espresso flavor."
+    }
+  ]
+}
