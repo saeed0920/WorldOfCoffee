@@ -1,5 +1,5 @@
 import { Outlet, RouterProvider } from "react-router-dom";
-import router from "@/router/router";
+import router from "@/Router/router";
 import { CoffeeProvider } from "@/Contexts/CoffeesContext";
 
 function App() {

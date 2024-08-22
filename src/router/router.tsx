@@ -1,5 +1,5 @@
 import { createRoutesFromElements, createBrowserRouter, Route } from "react-router-dom";
-import Home from "@/views/home/Home";
+import Home from "@/Views/Home/Home";
 
 const router = createBrowserRouter(
   createRoutesFromElements(

@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "@views/App";
+import App from "@/Views/App";
 import "@assets/css/index.css";
 import "@public/font/font.css";
 import "./i18";
