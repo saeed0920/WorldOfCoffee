@@ -1,0 +1,172 @@
+{
+  "comparisons": [
+    {
+      "coffee1": "Latte",
+      "coffee2": "Mocha",
+      "description": {
+        "latte": "A creamy coffee drink made with espresso and steamed milk, often topped with a small amount of milk foam.",
+        "mocha": "A chocolate-flavored variant of a caffe latte, combining espresso, steamed milk, and chocolate syrup or cocoa powder, often topped with whipped cream."
+      },
+      "origin": {
+        "latte": "USA",
+        "mocha": "Yemen"
+      },
+      "caffeineContent": {
+        "latte": "Medium",
+        "mocha": "Medium"
+      },
+      "servingSize": {
+        "latte": "240ml",
+        "mocha": "240ml"
+      },
+      "ingredients": {
+        "latte": ["Espresso", "Steamed milk", "Milk foam (optional)"],
+        "mocha": ["Espresso", "Steamed milk", "Chocolate syrup or cocoa powder", "Whipped cream (optional)"]
+      },
+      "flavorProfile": {
+        "latte": "Creamy, smooth, with a mild coffee flavor.",
+        "mocha": "Sweet, chocolatey, with a rich coffee undertone."
+      }
+    },
+    {
+      "coffee1": "Latte",
+      "coffee2": "Macchiato",
+      "description": {
+        "latte": "A creamy coffee drink made with espresso and steamed milk, often topped with a small amount of milk foam.",
+        "macchiato": "A coffee drink made with espresso 'stained' with a small amount of milk or milk foam."
+      },
+      "origin": {
+        "latte": "USA",
+        "macchiato": "Italy"
+      },
+      "caffeineContent": {
+        "latte": "Medium",
+        "macchiato": "High"
+      },
+      "servingSize": {
+        "latte": "240ml",
+        "macchiato": "30-60ml"
+      },
+      "ingredients": {
+        "latte": ["Espresso", "Steamed milk", "Milk foam (optional)"],
+        "macchiato": ["Espresso", "Milk or milk foam"]
+      },
+      "flavorProfile": {
+        "latte": "Creamy, smooth, with a mild coffee flavor.",
+        "macchiato": "Strong, bold, with a hint of creaminess."
+      }
+    },
+    {
+      "coffee1": "Latte",
+      "coffee2": "Flat White",
+      "description": {
+        "latte": "A creamy coffee drink made with espresso and steamed milk, often topped with a small amount of milk foam.",
+        "flatWhite": "A coffee drink consisting of a shot of espresso topped with a thin layer of steamed milk, offering a strong coffee flavor with a creamy texture."
+      },
+      "origin": {
+        "latte": "USA",
+        "flatWhite": "Australia"
+      },
+      "caffeineContent": {
+        "latte": "Medium",
+        "flatWhite": "Medium"
+      },
+      "servingSize": {
+        "latte": "240ml",
+        "flatWhite": "180ml"
+      },
+      "ingredients": {
+        "latte": ["Espresso", "Steamed milk", "Milk foam (optional)"],
+        "flatWhite": ["Espresso", "Steamed milk"]
+      },
+      "flavorProfile": {
+        "latte": "Creamy, smooth, with a mild coffee flavor.",
+        "flatWhite": "Smooth, velvety, with a strong espresso flavor."
+      }
+    },
+    {
+      "coffee1": "Mocha",
+      "coffee2": "Macchiato",
+      "description": {
+        "mocha": "A chocolate-flavored variant of a caffe latte, combining espresso, steamed milk, and chocolate syrup or cocoa powder, often topped with whipped cream.",
+        "macchiato": "A coffee drink made with espresso 'stained' with a small amount of milk or milk foam."
+      },
+      "origin": {
+        "mocha": "Yemen",
+        "macchiato": "Italy"
+      },
+      "caffeineContent": {
+        "mocha": "Medium",
+        "macchiato": "High"
+      },
+      "servingSize": {
+        "mocha": "240ml",
+        "macchiato": "30-60ml"
+      },
+      "ingredients": {
+        "mocha": ["Espresso", "Steamed milk", "Chocolate syrup or cocoa powder", "Whipped cream (optional)"],
+        "macchiato": ["Espresso", "Milk or milk foam"]
+      },
+      "flavorProfile": {
+        "mocha": "Sweet, chocolatey, with a rich coffee undertone.",
+        "macchiato": "Strong, bold, with a hint of creaminess."
+      }
+    },
+    {
+      "coffee1": "Mocha",
+      "coffee2": "Flat White",
+      "description": {
+        "mocha": "A chocolate-flavored variant of a caffe latte, combining espresso, steamed milk, and chocolate syrup or cocoa powder, often topped with whipped cream.",
+        "flatWhite": "A coffee drink consisting of a shot of espresso topped with a thin layer of steamed milk, offering a strong coffee flavor with a creamy texture."
+      },
+      "origin": {
+        "mocha": "Yemen",
+        "flatWhite": "Australia"
+      },
+      "caffeineContent": {
+        "mocha": "Medium",
+        "flatWhite": "Medium"
+      },
+      "servingSize": {
+        "mocha": "240ml",
+        "flatWhite": "180ml"
+      },
+      "ingredients": {
+        "mocha": ["Espresso", "Steamed milk", "Chocolate syrup or cocoa powder", "Whipped cream (optional)"],
+        "flatWhite": ["Espresso", "Steamed milk"]
+      },
+      "flavorProfile": {
+        "mocha": "Sweet, chocolatey, with a rich coffee undertone.",
+        "flatWhite": "Smooth, velvety, with a strong espresso flavor."
+      }
+    },
+    {
+      "coffee1": "Macchiato",
+      "coffee2": "Flat White",
+      "description": {
+        "macchiato": "A coffee drink made with espresso 'stained' with a small amount of milk or milk foam.",
+        "flatWhite": "A coffee drink consisting of a shot of espresso topped with a thin layer of steamed milk, offering a strong coffee flavor with a creamy texture."
+      },
+      "origin": {
+        "macchiato": "Italy",
+        "flatWhite": "Australia"
+      },
+      "caffeineContent": {
+        "macchiato": "High",
+        "flatWhite": "Medium"
+      },
+      "servingSize": {
+        "macchiato": "30-60ml",
+        "flatWhite": "180ml"
+      },
+      "ingredients": {
+        "macchiato": ["Espresso", "Milk or milk foam"],
+        "flatWhite": ["Espresso", "Steamed milk"]
+      },
+      "flavorProfile": {
+        "macchiato": "Strong, bold, with a hint of creaminess.",
+        "flatWhite": "Smooth, velvety, with a strong espresso flavor."
+      }
+    }
+  ]
+}
