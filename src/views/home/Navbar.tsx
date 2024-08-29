@@ -34,7 +34,7 @@ function Navbar() {
         </ul>
       </div>
 
-      <div className="flex gap-4 ph:w-full  md:gap-2 justify-end h-full items-center">
+      <div className="flex gap-4 ph:w-full  md:gap-2 justify-end h-full items-center z-[2]">
         <button className="p-2 ph:text-sm text-md  playfair  bg-transparent whitespace-nowrap signin_button text-white duration-300 rounded-md	 ">
           {t("sign in")}
         </button>
