@@ -5,6 +5,7 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     //we have many routs probebly so it shoul be in routs
 
+    // <Route index at='home' errorElement={<div>Ops!</div>}>
     <Route path="/" element={<Home />} errorElement={<div>Ops!</div>}>
       {/* Child Elements */}
     </Route>,
