@@ -15,5 +15,8 @@
   "versusCoffeeSub": "We don’t just make your coffee, we make your day!",
 
   "error_api_title": "Oops! API Call Failed",
-  "error_api_describe": "Network connectivity issues"
+  "error_api_describe": "Network connectivity issues",
+
+  "default_placeholder": "Select an option",
+  "default_describe_coffee": "Coffee is a popular drink made from roasted beans, enjoyed for its rich flavor and aroma, often served black or with milk and sugar"
 }

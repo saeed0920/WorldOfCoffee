@@ -1,7 +1,7 @@
 import navButton from "@/Components/Button/navButton";
 import Navigation from "@/Components/Navigation";
 import { useTranslation } from "react-i18next";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function Navbar() {
   const { t } = useTranslation();
@@ -11,12 +11,29 @@ function Navbar() {
     setNavOpen(!navOpen);
   }
 
+  // Custom event listener for escape menu in phone XD (just useful in developer mod:)))
+  useEffect(() => {
+    if (!navOpen) return;
+    function keyDownHandler(e: globalThis.KeyboardEvent) {
+      if (e.key === "Escape" && navOpen) {
+        e.preventDefault();
+        setNavOpen(false);
+      }
+    }
+    document.addEventListener("keydown", keyDownHandler);
+
+    return () => {
+      document.removeEventListener("keydown", keyDownHandler);
+    };
+  }, [navOpen]);
+
   return (
     <nav className="flex items-center ph:gap-4 justify-between  my-10">
       <img src="/public/logo/logo.svg" className="ph:w-28" />
 
       <div
-        className={`flex text-center fixed items-center justify-center   md:w-full ${navOpen ? "opacity-100 transition-all top-0 left-0 bg-yellow-950/85 backdrop-blur-md overflow-hidden h-screen w-screen z-10" : "md:opacity-0"}`}
+        className={`flex text-center  items-center justify-center md:fixed   md:w-full ${navOpen ? "opacity-100 transition-all top-0 left-0 bg-yellow-950/85 backdrop-blur-md overflow-hidden h-screen w-screen z-10" : "md:opacity-0"}`}
+        onClick={() => setNavOpen(false)}
       >
         <ul className={`flex gap-14 xl:gap-8 lg:gap-4 ${navOpen ? "flex-col gap-8 text-xl ph:text-lg [&>li]:py-2" : ""}`}>
           <li className="text-white flex justify-center items-center cursor-pointer playfair font-semibold">

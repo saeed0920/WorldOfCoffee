@@ -1,9 +1,11 @@
 import { Box, Collapse, Heading, Image, Text } from "@chakra-ui/react";
 import PropsTypes, { InferProps } from "prop-types";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 function Template({ title, describe, img }: InferProps<typeof Template.propsTypes>) {
   const [isHover, setIsHover] = useState(false);
+  const [t] = useTranslation();
   return (
     <>
       <Box
@@ -15,15 +17,19 @@ function Template({ title, describe, img }: InferProps<typeof Template.propsType
         gap=".4rem"
         borderRadius="md"
         overflow="hidden"
-        w="20rem"
+        w="18rem"
+        borderColor="wheat"
+        borderWidth="thin"
         backgroundColor="wheat"
       >
         <Image src={img} alt={title} objectFit="cover" width="100%" />
-        <Heading as="h2" size="lg">
+        <Heading as="h2" fontWeight="600" size="lg" fontFamily="Playfair Display" display="flex" gap=".2rem" alignItems="center" alignSelf="center">
           {title}
         </Heading>
         <Collapse in={isHover} startingHeight={1}>
-          <Text as="i">{describe || ""}</Text>
+          <Box padding=".2rem .6rem">
+            <Text as="i">{describe || t("default_describe_coffee")}</Text>
+          </Box>
         </Collapse>
       </Box>
     </>
