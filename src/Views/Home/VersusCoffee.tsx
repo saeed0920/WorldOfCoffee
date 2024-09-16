@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import type { Coffee } from "@/types";
 import { Text, Select, Skeleton, useToast } from "@chakra-ui/react";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import Template from "@/Views/Coffee's/Template";
 
 const VersusCoffee = () => {
@@ -12,8 +12,11 @@ const VersusCoffee = () => {
   const [coffees, setCoffees] = useState([]);
   const [coffee1, setCoffee1] = useState({} as Coffee);
   const [selectorOption1, setSelectorOption1] = useState("");
+  const [selectorOption2, setSelectorOption2] = useState("");
+  const [option1, setOption1] = useState<Coffee>();
+  const [option2, setOption2] = useState<Coffee>();
 
-  const getOption = () => {
+  const getOption = useCallback(() => {
     fetch(`${mainApi}/coffees`)
       .then((res) => res.json())
       .then((data) => {
@@ -31,12 +34,22 @@ const VersusCoffee = () => {
           position: "top-right",
         });
       });
-  };
+  }, [t, toast, mainApi]);
 
   useEffect(() => {
     setIsLoading(false);
     getOption();
-  }, []);
+  }, [getOption]);
+
+  useEffect(() => {
+    const result = coffees.find((coffee: Coffee) => coffee.id === selectorOption1);
+    setOption1(result);
+  }, [selectorOption1, coffees]);
+
+  useEffect(() => {
+    const result = coffees.find((coffee: Coffee) => coffee.id === selectorOption2);
+    setOption2(result);
+  }, [selectorOption2, coffees]);
 
   return (
     <div className="versusCoffee_header flex flex-col mx-auto justify-center text-center py-4">
@@ -47,23 +60,35 @@ const VersusCoffee = () => {
           <div className="flex flex-col gap-2">
             <Select
               value={selectorOption1}
-              onChange={(event) => {
-                console.log(event.target.value);
+              onChange={(event: React.ChangeEvent<HTMLSelectElement>) => {
+                setSelectorOption1(event.target.value);
               }}
               placeholder={t("default_placeholder")}
             >
               {coffees.map((coffee: Coffee) => (
-                <option value={coffee.id} key={coffee.id}>
+                <option disabled={coffee.id === selectorOption2} value={coffee.id} key={coffee.id}>
                   {coffee.name}
                 </option>
               ))}
             </Select>
-            <Template title={coffee1.name} describe={coffee1.description} key="1" img="./public/Images/Cappu.jpg"></Template>
+            {option1 && <Template title={option1.name} describe={option1.description} img="./public/Images/Cappu.jpg"></Template>}
           </div>
           <Text as="abbr"></Text>
           <div className="flex flex-col gap-2">
-            <Select placeholder={t("default_placeholder")}></Select>
-            <Template title="slm" key="1" img="./public/Images/Cappu.jpg"></Template>
+            <Select
+              value={selectorOption2}
+              onChange={(event: React.ChangeEvent<HTMLSelectElement>) => {
+                setSelectorOption2(event.target.value);
+              }}
+              placeholder={t("default_placeholder")}
+            >
+              {coffees.map((coffee: Coffee) => (
+                <option disabled={coffee.id === selectorOption1} value={coffee.id} key={coffee.id}>
+                  {coffee.name}
+                </option>
+              ))}
+            </Select>
+            {option2 && <Template title={option2.name} describe={option2.description} img="./public/Images/Cappu.jpg"></Template>}
           </div>
         </Skeleton>
       </div>

@@ -3,21 +3,20 @@ import navButton from "@/Components/Button/navButton";
 import { useTranslation } from "react-i18next";
 import Template from "@/Views/Coffee's/Template";
 import { useCoffee } from "@/Contexts/CoffeesContext";
+import { useState, useEffect } from "react";
+import { Coffee } from "@/types";
 
 export function Discover() {
   const { t } = useTranslation();
   const coffeeList = useCoffee();
+  const [randomCoffee, setRandomCoffee] = useState<Coffee | null>(null);
 
-  if (!coffeeList) {
-    return <p>Loading coffee data...</p>;
-  }
-
-  if (coffeeList.length === 0) {
-    return <p>No coffee data available.</p>;
-  }
-
-  const randomIndex = Math.floor(Math.random() * coffeeList.length);
-  const randomCoffee = coffeeList[randomIndex];
+  useEffect(() => {
+    if (coffeeList.length > 0) {
+      const randomIndex = Math.floor(Math.random() * coffeeList.length);
+      setRandomCoffee(coffeeList[randomIndex]);
+    }
+  }, [coffeeList]);
 
   return (
     <section className="flex flex-1  relative pt-40 pb-20">
@@ -27,7 +26,11 @@ export function Discover() {
         <div className="pt-3">{navButton("Learn More")}</div>
       </div>
       <div className="flex flex-1 justify-center ">
-        <Template title={randomCoffee.name} describe={randomCoffee.description} key="1" img="./public/Images/Cappu.jpg"></Template>
+        {randomCoffee ? (
+          <Template title={randomCoffee.name} describe={randomCoffee.description} key="1" img="./public/Images/Cappu.jpg"></Template>
+        ) : (
+          <Template title={""} describe={""} key="1" img=""></Template>
+        )}
       </div>
     </section>
   );
