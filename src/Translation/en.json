@@ -18,5 +18,6 @@
   "error_api_describe": "Network connectivity issues",
 
   "default_placeholder": "Select an option",
-  "default_describe_coffee": "Coffee is a popular drink made from roasted beans, enjoyed for its rich flavor and aroma, often served black or with milk and sugar"
+  "default_describe_coffee": "Coffee is a popular drink made from roasted beans, enjoyed for its rich flavor and aroma, often served black or with milk and sugar",
+  "default_different_result": "Please select an option from both dropdown menus!"
 }

@@ -1,6 +1,7 @@
 {
   "coffees": [
     {
+      "id": 1,
       "name": "Espresso",
       "description": "A strong and rich coffee, typically served in a small cup. It forms the base for many other coffee drinks.",
       "origin": "Italy",
@@ -10,6 +11,7 @@
       "flavorProfile": "Bold, concentrated, with a thick crema on top."
     },
     {
+      "id": 2,
       "name": "Latte",
       "description": "A smooth, milky coffee made with one part espresso and three parts steamed milk, often topped with a small amount of foam.",
       "origin": "Italy",
@@ -19,6 +21,7 @@
       "flavorProfile": "Creamy, mild, with a subtle coffee flavor."
     },
     {
+      "id": 3,
       "name": "Cappuccino",
       "description": "A balanced coffee drink consisting of equal parts espresso, steamed milk, and milk foam, often topped with cocoa powder or cinnamon.",
       "origin": "Italy",
@@ -28,6 +31,7 @@
       "flavorProfile": "Rich, creamy, with a strong coffee flavor and a velvety texture."
     },
     {
+      "id": 4,
       "name": "Americano",
       "description": "A coffee drink made by diluting an espresso with hot water, resulting in a similar strength to drip coffee but with a different flavor profile.",
       "origin": "USA",
@@ -37,6 +41,7 @@
       "flavorProfile": "Smooth, mild, with a slightly bitter taste."
     },
     {
+      "id": 5,
       "name": "Mocha",
       "description": "A chocolate-flavored variant of a caffe latte, combining espresso, steamed milk, and chocolate syrup or cocoa powder, often topped with whipped cream.",
       "origin": "Yemen",
@@ -46,6 +51,7 @@
       "flavorProfile": "Sweet, chocolatey, with a rich coffee undertone."
     },
     {
+      "id": 6,
       "name": "Macchiato",
       "description": "A coffee drink made with espresso 'stained' with a small amount of milk or milk foam. The name 'macchiato' means 'stained' or 'spotted' in Italian.",
       "origin": "Italy",
@@ -55,6 +61,7 @@
       "flavorProfile": "Strong, bold, with a hint of creaminess."
     },
     {
+      "id": 7,
       "name": "Flat White",
       "description": "A coffee drink consisting of a shot of espresso topped with a thin layer of steamed milk, offering a strong coffee flavor with a creamy texture.",
       "origin": "Australia",
@@ -62,6 +69,113 @@
       "servingSize": "180ml",
       "ingredients": ["Espresso", "Steamed milk"],
       "flavorProfile": "Smooth, velvety, with a strong espresso flavor."
+    }
+  ],
+  "different": [
+    {
+      "coffee1": "Espresso",
+      "coffee2": "Latte",
+      "comparisonDescription": "Espresso is a concentrated coffee served in a small cup, while Latte is made with one part espresso and three parts steamed milk, resulting in a creamy texture. Espresso has a high caffeine content and a serving size of 30-50ml, whereas Latte has a medium caffeine content and a larger serving size of 240ml."
+    },
+    {
+      "coffee1": "Espresso",
+      "coffee2": "Cappuccino",
+      "comparisonDescription": "Espresso is a strong coffee served in a small cup, while Cappuccino consists of equal parts espresso, steamed milk, and milk foam, often topped with cocoa powder. Both have high caffeine content, but Cappuccino has a serving size of 180ml and a creamier texture due to the milk foam."
+    },
+    {
+      "coffee1": "Espresso",
+      "coffee2": "Americano",
+      "comparisonDescription": "Espresso is a concentrated coffee served in a small cup, while Americano is made by diluting espresso with hot water, resulting in a smoother flavor. Americano has a similar strength to drip coffee but with a different flavor profile, and it is typically served in a larger size of 240ml."
+    },
+    {
+      "coffee1": "Espresso",
+      "coffee2": "Mocha",
+      "comparisonDescription": "Espresso is a strong coffee served alone, while Mocha combines espresso with steamed milk and chocolate syrup, often topped with whipped cream. Mocha has a sweet, chocolatey flavor and a medium caffeine content, served in 240ml."
+    },
+    {
+      "coffee1": "Espresso",
+      "coffee2": "Macchiato",
+      "comparisonDescription": "Espresso is a concentrated coffee served in a small cup, while Macchiato is espresso 'stained' with a small amount of milk or milk foam. Macchiato has a high caffeine content and a serving size of 30-60ml, making it stronger than a Latte or Cappuccino."
+    },
+    {
+      "coffee1": "Espresso",
+      "coffee2": "Flat White",
+      "comparisonDescription": "Espresso is a concentrated coffee served alone, while Flat White consists of a shot of espresso topped with a thin layer of steamed milk, offering a strong coffee flavor with a creamy texture. Flat White is typically served in 180ml."
+    },
+    {
+      "coffee1": "Latte",
+      "coffee2": "Cappuccino",
+      "comparisonDescription": "Latte is a smooth, milky coffee made with more steamed milk compared to Cappuccino, which has equal parts espresso, steamed milk, and milk foam. Latte has a larger serving size of 240ml, while Cappuccino is served in 180ml and has a frothier texture."
+    },
+    {
+      "coffee1": "Latte",
+      "coffee2": "Americano",
+      "comparisonDescription": "Latte is a creamy coffee made with steamed milk, while Americano is made by diluting espresso with hot water, resulting in a smooth flavor. Both have medium caffeine content, but Latte has a larger serving size of 240ml, while Americano is also served in 240ml but without milk."
+    },
+    {
+      "coffee1": "Latte",
+      "coffee2": "Mocha",
+      "comparisonDescription": "Latte is a milky coffee with a subtle coffee flavor, while Mocha is a chocolate-flavored coffee drink made with espresso, steamed milk, and chocolate syrup. Both have a medium caffeine content and a serving size of 240ml, but Mocha has a sweeter, chocolatey taste."
+    },
+    {
+      "coffee1": "Latte",
+      "coffee2": "Macchiato",
+      "comparisonDescription": "Latte is a creamy coffee made with steamed milk, while Macchiato is a strong espresso 'stained' with a small amount of milk or milk foam. Latte has a larger serving size of 240ml and a milder flavor, whereas Macchiato has a high caffeine content and a smaller serving size of 30-60ml."
+    },
+    {
+      "coffee1": "Latte",
+      "coffee2": "Flat White",
+      "comparisonDescription": "Latte is made with more steamed milk compared to Flat White, which consists of a shot of espresso topped with a thin layer of steamed milk. Both have a creamy texture, but Flat White has a stronger coffee flavor and is typically served in 180ml."
+    },
+    {
+      "coffee1": "Cappuccino",
+      "coffee2": "Americano",
+      "comparisonDescription": "Cappuccino is a creamy coffee drink made with equal parts espresso, steamed milk, and milk foam, while Americano is made by diluting espresso with hot water. Cappuccino has a frothy texture and is served in 180ml, whereas Americano is smoother and served in 240ml."
+    },
+    {
+      "coffee1": "Cappuccino",
+      "coffee2": "Mocha",
+      "comparisonDescription": "Cappuccino is a balanced coffee drink with equal parts espresso, steamed milk, and milk foam, while Mocha combines espresso, steamed milk, and chocolate syrup. Both have medium caffeine content, but Cappuccino is typically served in 180ml, while Mocha is served in 240ml with a sweeter flavor."
+    },
+    {
+      "coffee1": "Cappuccino",
+      "coffee2": "Macchiato",
+      "comparisonDescription": "Cappuccino is a creamy coffee drink made with equal parts espresso, steamed milk, and milk foam, while Macchiato is a strong espresso 'stained' with a small amount of milk. Cappuccino has a larger serving size of 180ml and a frothy texture, whereas Macchiato has a high caffeine content and a smaller serving size of 30-60ml."
+    },
+    {
+      "coffee1": "Cappuccino",
+      "coffee2": "Flat White",
+      "comparisonDescription": "Cappuccino features equal parts espresso, steamed milk, and milk foam, while Flat White consists of a shot of espresso topped with a thin layer of steamed milk. Both have medium caffeine content, but Flat White has a stronger coffee flavor and is typically served in 180ml."
+    },
+    {
+      "coffee1": "Americano",
+      "coffee2": "Mocha",
+      "comparisonDescription": "Americano is made by diluting espresso with hot water, resulting in a smooth flavor, while Mocha combines espresso, steamed milk, and chocolate syrup for a sweet taste. Both have medium caffeine content, but Americano is served in 240ml without milk, while Mocha is also served in 240ml with chocolate."
+    },
+    {
+      "coffee1": "Americano",
+      "coffee2": "Macchiato",
+      "comparisonDescription": "Americano is a diluted espresso with hot water, resulting in a smooth flavor, while Macchiato is a strong espresso 'stained' with a small amount of milk. Americano has a medium caffeine content and a serving size of 240ml, whereas Macchiato has a high caffeine content and a smaller serving size of 30-60ml."
+    },
+    {
+      "coffee1": "Americano",
+      "coffee2": "Flat White",
+      "comparisonDescription": "Americano is made by diluting espresso with hot water, while Flat White consists of a shot of espresso topped with a thin layer of steamed milk. Americano has a smooth flavor and is served in 240ml, whereas Flat White has a creamier texture and is typically served in 180ml."
+    },
+    {
+      "coffee1": "Mocha",
+      "coffee2": "Macchiato",
+      "comparisonDescription": "Mocha is a chocolate-flavored coffee drink made with espresso, steamed milk, and chocolate syrup, while Macchiato is a strong espresso 'stained' with a small amount of milk. Mocha has a medium caffeine content and a serving size of 240ml, while Macchiato has a high caffeine content and a smaller serving size of 30-60ml."
+    },
+    {
+      "coffee1": "Mocha",
+      "coffee2": "Flat White",
+      "comparisonDescription": "Mocha is a sweet, chocolate-flavored coffee drink made with espresso, steamed milk, and chocolate syrup, while Flat White consists of a shot of espresso topped with a thin layer of steamed milk. Both have medium caffeine content and a serving size of 240ml, but Mocha has a richer, sweeter flavor."
+    },
+    {
+      "coffee1": "Macchiato",
+      "coffee2": "Flat White",
+      "comparisonDescription": "Macchiato is a strong coffee drink made with espresso and a small amount of milk, while Flat White consists of espresso topped with a thin layer of steamed milk. Macchiato has a high caffeine content and a smaller serving size of 30-60ml, whereas Flat White has a medium caffeine content and a serving size of 180ml."
     }
   ]
 }
