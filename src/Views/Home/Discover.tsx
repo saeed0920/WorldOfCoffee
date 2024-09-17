@@ -27,9 +27,9 @@ export function Discover() {
       </div>
       <div className="flex flex-1 justify-center ">
         {randomCoffee ? (
-          <Template title={randomCoffee.name} describe={randomCoffee.description} key="1" img="./public/Images/Cappu.jpg"></Template>
+          <Template title={randomCoffee.name} describe={randomCoffee.description} img="./public/Images/Cappu.jpg"></Template>
         ) : (
-          <Template title={""} describe={""} key="1" img=""></Template>
+          <Template title={""} describe={""} img=""></Template>
         )}
       </div>
     </section>

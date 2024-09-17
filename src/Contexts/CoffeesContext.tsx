@@ -26,7 +26,6 @@ function CoffeeProvider({ children }: InferProps<typeof CoffeeProvider.propTypes
         })
         .catch((error) => {
           console.log(error);
-          console.log("hello");
           toast({
             title: t("error_api_title"),
             description: t("error_api_describe"),
