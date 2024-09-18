@@ -17,7 +17,8 @@ const VersusCoffee = () => {
   const [option1, setOption1] = useState<Coffee>();
   const [option2, setOption2] = useState<Coffee>();
   const [show, setShow] = useState<boolean>(true);
-  const [isOpen, setIsOpen] = useState<boolean>(true);
+  const [isOpenOption1, setIsOpenOption1] = useState<boolean>(true);
+  const [isOpenOption2, setIsOpenOption2] = useState<boolean>(true);
 
   const getOption = useCallback(() => {
     fetch(`${mainApi}/coffees`)
@@ -66,17 +67,20 @@ const VersusCoffee = () => {
 
   useEffect(() => {
     const result = coffees.find((coffee: Coffee) => Number(coffee.id) === selectorOption1);
-    // **TODO for add this animation or not : if yes add for selectorOption2 as well
-    setIsOpen(false);
+    setIsOpenOption1(false);
     setTimeout(() => {
-      setIsOpen(true);
+      setIsOpenOption1(true);
       setOption1(result);
     }, 250);
   }, [selectorOption1, coffees]);
 
   useEffect(() => {
     const result = coffees.find((coffee: Coffee) => Number(coffee.id) === selectorOption2);
-    setOption2(result);
+    setIsOpenOption2(false);
+    setTimeout(() => {
+      setIsOpenOption2(true);
+      setOption2(result);
+    }, 250);
   }, [selectorOption2, coffees]);
 
   useEffect(() => {
@@ -122,7 +126,7 @@ const VersusCoffee = () => {
                 </option>
               ))}
             </Select>
-            <SlideFade offsetY="1.5rem" in={isOpen}>
+            <SlideFade offsetY="1.5rem" in={isOpenOption1}>
               {option1 && <Template title={option1.name} describe={option1.description} img="./public/Images/Cappu.jpg"></Template>}
             </SlideFade>
           </div>
@@ -147,7 +151,9 @@ const VersusCoffee = () => {
                 </option>
               ))}
             </Select>
-            {option2 && <Template title={option2.name} describe={option2.description} img="./public/Images/Cappu.jpg"></Template>}
+            <SlideFade offsetY="1.5rem" in={isOpenOption2}>
+              {option2 && <Template title={option2.name} describe={option2.description} img="./public/Images/Cappu.jpg"></Template>}
+            </SlideFade>
           </div>
         </Skeleton>
       </div>
