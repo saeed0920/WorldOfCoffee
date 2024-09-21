@@ -1,13 +1,12 @@
 import { createRoutesFromElements, createBrowserRouter, Route } from "react-router-dom";
 import Home from "@/Views/Home/Home";
+import Notfound from "@/Views/NotFound";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    //we have many routs probebly so it shoul be in routs
-
-    // <Route index at='home' errorElement={<div>Ops!</div>}>
-    <Route path="/" element={<Home />} errorElement={<div>Ops!</div>}>
-      {/* Child Elements */}
+    <Route path="/" element={<Home />} errorElement={<Notfound/>}>
+     
+     
     </Route>,
   ),
 ) as ReturnType<typeof createBrowserRouter>;
