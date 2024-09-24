@@ -18,11 +18,9 @@ function Template({ title, describe, img }: InferProps<typeof Template.propsType
         borderRadius="md"
         overflow="hidden"
         w="18rem"
-        borderColor="wheat"
-        borderWidth="thin"
         backgroundColor="wheat"
       >
-        <Image src={img} alt={title} objectFit="cover" width="100%" />
+        <Image src={img} alt={title} objectFit="cover" width="100%" minHeight="250px" />
         <Heading as="h2" fontWeight="600" size="lg" fontFamily="Playfair Display" display="flex" gap=".2rem" alignItems="center" alignSelf="center">
           {title}
         </Heading>

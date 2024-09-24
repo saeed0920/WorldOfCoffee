@@ -127,7 +127,9 @@ const VersusCoffee = () => {
               ))}
             </Select>
             <SlideFade offsetY="1.5rem" in={isOpenOption1}>
-              {option1 && <Template title={option1.name} describe={option1.description} img="./public/Images/Cappu.jpg"></Template>}
+              {option1 && (
+                <Template title={option1.name} describe={option1.description} img={`public/Images/${option1.name.replace(" ", "_")}.jpg`}></Template>
+              )}
             </SlideFade>
           </div>
           <Fade className="p-1 rounded-lg shadow-md  bg-[wheat] mt-5" in={show}>
@@ -152,7 +154,9 @@ const VersusCoffee = () => {
               ))}
             </Select>
             <SlideFade offsetY="1.5rem" in={isOpenOption2}>
-              {option2 && <Template title={option2.name} describe={option2.description} img="./public/Images/Cappu.jpg"></Template>}
+              {option2 && (
+                <Template title={option2.name} describe={option2.description} img={`public/Images/${option2.name.replace(" ", "_")}.jpg`}></Template>
+              )}
             </SlideFade>
           </div>
         </Skeleton>

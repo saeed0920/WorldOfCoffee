@@ -3,6 +3,9 @@ export interface Coffee {
   description: string;
   id: string;
   ingredients: array;
+  url: {
+    img: string;
+  };
 }
 
 export interface Different {

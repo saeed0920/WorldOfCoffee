@@ -23,11 +23,10 @@ export function Discover() {
       <div className="flex flex-col gap-2 w-1/2 md:w-full">
         <h1 className="flex flex-col playfair header1">{t("discover_h1")}</h1>
         <article className="pt-4 headerSub playfair">{t("discover_sub")}</article>
-        <div className="pt-3">{navButton("Learn More")}</div>
       </div>
       <div className="flex flex-1 justify-center ">
         {randomCoffee ? (
-          <Template title={randomCoffee.name} describe={randomCoffee.description} img="./public/Images/Cappu.jpg"></Template>
+          <Template title={randomCoffee.name} describe={randomCoffee.description} img={`public/Images/${randomCoffee.name}.jpg`}></Template>
         ) : (
           <Template title={""} describe={""} img=""></Template>
         )}
