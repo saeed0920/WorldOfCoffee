@@ -1,5 +1,4 @@
 import "@public/font/font.css";
-import navButton from "@/Components/Button/navButton";
 import { useTranslation } from "react-i18next";
 import Template from "@/Views/Coffee's/Template";
 import { useCoffee } from "@/Contexts/CoffeesContext";
