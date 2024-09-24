@@ -28,7 +28,7 @@
     "paths": {
       "@/*": ["./src/*"],
       "@assets/*": ["./src/Assets/*"],
-      "@views/*": ["src/Views/*"],
+      "@views/*": ["./src/Views/*"],
       "@public/*": ["./public/*"]
 
     },

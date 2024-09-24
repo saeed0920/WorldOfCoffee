@@ -79,3 +79,10 @@ nav a:hover{
 .signin_button:hover {
   background-color: rgb(88, 82, 72);
 }
+
+.header1 {
+  @apply text-coffee-brown text-5xl  font-bold;
+}
+.headerSub {
+  @apply text-lg text-gray-500 font-normal;
+}

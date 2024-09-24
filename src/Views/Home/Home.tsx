@@ -2,6 +2,7 @@ import { Discover } from "./Discover";
 import HomeIntro from "./HomeIntro";
 import Navbar from "./Navbar";
 import coffee_image from "@public/header/coffee_image.jpg";
+import VersusCoffee from "./VersusCoffee";
 
 function Home() {
   return (
@@ -13,6 +14,7 @@ function Home() {
       <Navbar />
       <HomeIntro />
       <Discover />
+      <VersusCoffee />
     </div>
   );
 }

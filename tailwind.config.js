@@ -3,8 +3,9 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    colors: { "coffee-brown": "#603809", "late-white": "#F9C06A" },
-    extend: {},
+    extend: {
+      colors: { "coffee-brown": "#603809", "late-white": "#F9C06A" },
+    },
     screens: {
       xl: { max: "81.25em" },
       // => @media (max-width: 1300px) { ... }
