@@ -25,7 +25,12 @@ export function Discover() {
       </div>
       <div className="flex flex-1 justify-center ">
         {randomCoffee ? (
-          <Template title={randomCoffee.name} describe={randomCoffee.description} img={`public/Images/${randomCoffee.name}.jpg`}></Template>
+          // TODO
+          <Template
+            title={randomCoffee.name}
+            describe={randomCoffee.description}
+            img={`@public/Images/${randomCoffee.name.replace(" ", "_")}.jpg`}
+          ></Template>
         ) : (
           <Template title={""} describe={""} img=""></Template>
         )}
