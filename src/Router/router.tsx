@@ -1,10 +1,4 @@
-import Home from "@/Views/Home/Home"
+import Home from "@/Views/Home/Home";
 
-
-const routes=[
-    {path:'/main',element:Home},
-    
-    
-    
-]
-export default routes
+const routes = [{ path: "/main", element: Home }];
+export default routes;
