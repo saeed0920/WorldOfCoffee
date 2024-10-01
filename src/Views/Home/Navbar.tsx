@@ -29,13 +29,13 @@ function Navbar() {
 
   return (
     <nav className="flex items-center ph:gap-4 justify-between  my-10">
-      <img src="/public/logo/logo.svg" className="ph:w-28" />
+      <img src="/logo/logo.svg" className="ph:w-28" />
 
       <div
         className={`flex text-center  items-center justify-center md:fixed   md:w-full ${navOpen ? "opacity-100 transition-all top-0 left-0 bg-yellow-950/85 backdrop-blur-md overflow-hidden h-screen w-screen z-10" : "md:opacity-0"}`}
         onClick={() => setNavOpen(false)}
       >
-        <ul className={`flex gap-14 xl:gap-8 lg:gap-4 ${navOpen ? "flex-col gap-8 text-xl ph:text-lg [&>li]:py-2" : ""}`}>
+        <ul className={`flex gap-14 xl:gap-8 lg:gap-4 ph:gap-1 ${navOpen ? "flex-col gap-8 text-xl ph:text-lg [&>li]:py-2" : ""}`}>
           <li className="text-white flex justify-center items-center cursor-pointer playfair font-semibold">
             <Navigation text="home" />
           </li>
@@ -51,7 +51,7 @@ function Navbar() {
         </ul>
       </div>
 
-      <div className="flex gap-4 ph:w-full  md:gap-2 justify-end h-full items-center z-[2]">
+      <div className="flex gap-4 ph:w-full  md:gap-2 ph:gap-1 justify-end h-full items-center z-[2]">
         <button className="p-2 ph:text-sm text-md  playfair  bg-transparent whitespace-nowrap signin_button text-white duration-300 rounded-md	 ">
           {t("sign in")}
         </button>

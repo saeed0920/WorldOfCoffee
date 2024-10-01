@@ -17,16 +17,26 @@ function Template({ title, describe, img }: InferProps<typeof Template.propsType
         gap=".4rem"
         borderRadius="md"
         overflow="hidden"
-        w="18rem"
         backgroundColor="wheat"
       >
-        <Image src={img} alt={title} objectFit="cover" width="100%" minHeight="250px" />
-        <Heading as="h2" fontWeight="600" size="lg" fontFamily="Playfair Display" display="flex" gap=".2rem" alignItems="center" alignSelf="center">
+        <Image src={img} alt={title} objectFit="cover" width="100%" />
+        <Heading
+          as="h2"
+          fontWeight="600"
+          size={{ base: "sm", ph: "md", sm: "lg" }}
+          fontFamily="Playfair Display"
+          display="flex"
+          gap=".2rem"
+          alignItems="center"
+          alignSelf="center"
+        >
           {title}
         </Heading>
         <Collapse in={isHover} startingHeight={1}>
-          <Box padding=".2rem .6rem">
-            <Text as="i">{describe || t("default_describe_coffee")}</Text>
+          <Box padding={{ sm: ".1rem .5rem", md: ".2rem .6rem" }}>
+            <Text fontSize={{ base: "smaller", ph: "small", sm: "medium" }} as="i">
+              {describe || t("default_describe_coffee")}
+            </Text>
           </Box>
         </Collapse>
       </Box>

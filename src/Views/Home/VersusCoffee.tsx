@@ -109,11 +109,16 @@ const VersusCoffee = () => {
       <h2 className="playfair header1">{t("versusCoffeeHeader")}</h2>
       <p className="playfair headerSub pt-4">{t("versusCoffeeSub")}</p>
       <div className="mt-6">
-        <Skeleton borderColor="gray" className="grid items-start grid-cols-[20rem,25rem,20rem] gap-4" isLoaded={isLoading}>
-          <div className="flex flex-col items-center gap-2 min-h-[30rem]">
+        <Skeleton
+          borderColor="gray"
+          className="grid justify-center items-start grid-cols-[20rem,25rem,20rem] lg:grid-cols-[18rem,18rem]  gap-4 lg:gap-2 sm:gap-1 sm:grid-cols-[10rem,10rem] ph:grid-cols-[8rem,8rem]"
+          isLoaded={isLoading}
+        >
+          <div className="flex flex-col gap-2 min-h-[30rem] lg:col-start-1 lg:min-h-[20rem] sm:min-h-[15rem] ph:min-h-0">
             <Select
+              size={{ base: "xs", ph: "sm", sm: "md" }}
+              padding={{ base: "0" }}
               textAlign="center"
-              width="18rem"
               value={selectorOption1}
               onChange={(event: React.ChangeEvent<HTMLSelectElement>) => {
                 setSelectorOption1(Number(event.target.value));
@@ -128,19 +133,18 @@ const VersusCoffee = () => {
             </Select>
             <SlideFade offsetY="1.5rem" in={isOpenOption1}>
               {option1 && (
-                // TODO
-                <Template title={option1.name} describe={option1.description} img={`public/Images/${option1.name.replace(" ", "_")}.jpg`}></Template>
+                <Template title={option1.name} describe={option1.description} img={`images/${option1.name.replace(" ", "_")}.jpg`}></Template>
               )}
             </SlideFade>
           </div>
-          <Fade className="p-1 rounded-lg shadow-md  bg-[wheat] mt-5" in={show}>
-            <Text alignSelf="top" as="abbr" fontSize="md">
+          <Fade className="p-1 rounded-lg shadow-md  bg-[wheat] mt-5 lg:row-start-2 lg:col-span-2  sm:max-w-full sm:mt-4 ph:mt-2" in={show}>
+            <Text alignSelf="top" as="abbr" fontSize={{ base: "smaller", ph: "small", sm: "medium" }}>
               {differentResult || t("default_different_result")}
             </Text>
           </Fade>
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col  min-h-[30rem] gap-2 lg:col-start-2 lg:min-h-[20rem] sm:min-h-[15rem] ph:min-h-0">
             <Select
-              width="18rem"
+              size={{ base: "xs", ph: "sm", sm: "md" }}
               textAlign="center"
               value={selectorOption2}
               onChange={(event: React.ChangeEvent<HTMLSelectElement>) => {
@@ -156,8 +160,7 @@ const VersusCoffee = () => {
             </Select>
             <SlideFade offsetY="1.5rem" in={isOpenOption2}>
               {option2 && (
-                // TODO
-                <Template title={option2.name} describe={option2.description} img={`public/Images/${option2.name.replace(" ", "_")}.jpg`}></Template>
+                <Template title={option2.name} describe={option2.description} img={`images/${option2.name.replace(" ", "_")}.jpg`}></Template>
               )}
             </SlideFade>
           </div>
