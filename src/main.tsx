@@ -5,10 +5,11 @@ import "@assets/css/index.css";
 import "@public/font/font.css";
 import { ChakraProvider } from "@chakra-ui/react";
 import "./i18";
+import theme from "../chakra.config";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <ChakraProvider>
+    <ChakraProvider theme={theme}>
       <App />
     </ChakraProvider>
   </React.StrictMode>,
