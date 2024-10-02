@@ -21,12 +21,13 @@ export function Discover() {
   }, [coffeeList]);
 
   return (
-    <section className="flex flex-1  relative pt-40 gap-2 pb-20">
-      <div className="flex flex-col flex-1 gap-2 md:w-full">
+    <section className="flex w-full pt-40 gap-2 pb-20 md:flex-col lg:px-10 lg:py-10 mt-10">
+      <div className="flex flex-col flex-1 gap-2 md:w-full ">
         <h1 className="flex flex-col playfair header1">{t("discover_h1")}</h1>
         <article className="pt-4 headerSub playfair">{t("discover_sub")}</article>
       </div>
-      <Skeleton className="flex justify-center mx-auto" isLoaded={!isLoading}>
+      {/* grid-cols-[20rem,25rem,20rem] lg:grid-cols-[18rem,18rem]  gap-4 lg:gap-2 sm:gap-1 sm:grid-cols-[10rem,10rem] ph:grid-cols-[8rem,8rem] */}
+      <Skeleton className="flex justify-center mx-auto w-[20rem] lg:w-[18rem] sm:w-[10rem] self-start" isLoaded={!isLoading}>
         {randomCoffee ? (
           <Template
             title={randomCoffee.name}
