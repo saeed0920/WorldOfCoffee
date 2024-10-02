@@ -28,7 +28,11 @@ export function Discover() {
       </div>
       <Skeleton className="flex justify-center mx-auto" isLoaded={!isLoading}>
         {randomCoffee ? (
-          <Template title={randomCoffee.name} describe={randomCoffee.description} img={`public/Images/${randomCoffee.name}.jpg`}></Template>
+          <Template
+            title={randomCoffee.name}
+            describe={randomCoffee.description}
+            img={`images/${randomCoffee.name.replace(" ", "_")}.jpg`}
+          ></Template>
         ) : (
           <Template title={""} describe={""} img=""></Template>
         )}
