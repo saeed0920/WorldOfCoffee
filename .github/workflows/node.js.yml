@@ -5,7 +5,7 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   # pull_request:
   #   branches: [ "main" ]
 
@@ -16,17 +16,22 @@ jobs:
       matrix:
         node-version: [22.x]
     steps:
-    - uses: actions/checkout@v4
-    - name: Install pnpm
-      uses: pnpm/action-setup@v4
-      with:
-        version: 9
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v4
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'pnpm'
-    - name: Install dependencies
-      run: pnpm install
-    - name: Build the project
-      run: pnpm build
+      - uses: actions/checkout@v4
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: "pnpm"
+      - name: "Create env file"
+        run: |
+          touch .env
+          echo BASE_URL=http://82.115.21.184:8000 >> .env
+          cat .env
+      - name: Install dependencies
+        run: pnpm install
+      - name: Build the project
+        run: pnpm build
