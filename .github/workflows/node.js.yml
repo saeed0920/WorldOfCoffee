@@ -11,10 +11,10 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: self-hosted
     strategy:
       matrix:
-       node-version: [20.x, 22.x]
+        node-version: [20.x, 22.x]
     steps:
     - uses: actions/checkout@v4
     - name: Install pnpm
@@ -27,5 +27,6 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'pnpm'
     - name: Install dependencies
-    - run: pnpm i
-    - run: pnpm build --if-present
+      run: pnpm install
+    - name: Build the project
+      run: pnpm build --if-present
