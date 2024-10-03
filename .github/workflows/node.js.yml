@@ -29,4 +29,4 @@ jobs:
     - name: Install dependencies
       run: pnpm install
     - name: Build the project
-      run: pnpm build --if-present
+      run: pnpm build
