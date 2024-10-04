@@ -12,70 +12,43 @@ a {
 
 .linav {
   color: chocolate;
-}
-/* 
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;}
-  
-nav a {
-color: inherit;
-text-decoration: none;
-}
-nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;}
-nav li {
-margin: 0 2rem;
+}.text-container {
+  max-height: calc(2.5em * 4); /* Height for 4 lines of text */
+  overflow-y: auto; /* Allow vertical scrolling */
+  scrollbar-width: 9px; /* For Firefox */
+  scrollbar-color: #603809 #F9C06A; /* Thumb and track color for Firefox */
+  border-radius: 10px; /* Rounded corners for the text container */
 }
 
-
-nav a::after {
-content: '';
-position: absolute;
-    
-    width: 100%;
-    height: 0.15em;
-    background-color: rgb(151, 104, 49);
-    opacity: 1;
-
-    transition: opacity 450ms, transform 450ms;
-  }
-nav a:hover::after,
-nav a:focus::after {
-    opacity: 1;
-    transform: translate3d(0, 0.2em, 0);
-  }
-
-nav li a {
-overflow: hidden;
+/* WebKit browsers (Chrome, Safari) custom scrollbar */
+.text-container::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
 }
-  
-nav li a::after {
-    opacity: 1;
-    transform: translate3d(-100%, 0, 0);
-  }
-  
-nav li a:hover::after,
-nav li a:focus::after{
-    transform: translate3d(0, 0, 0);
-  }
 
-nav li a::after {
-    opacity: 1;
-    transform: scale(0);
-    transform-origin: center;
-  }
-  
-nav li a:hover::after,
-nav li a:focus::after{transform: scale(1);
-  }
-nav a:hover{
-    color: rgba(180, 173, 166, 0.656);
-   
-} */
+.text-container::-webkit-scrollbar-thumb {
+  background-color: #d88585; /* Custom color for the scrollbar handle */
+  border-radius: 50px; /* Rounded scrollbar handle */
+}
+
+.text-container::-webkit-scrollbar-track {
+  background-color: burlywood; /* Color of the scrollbar track */
+}
+
+/* Text styling */
+.text-clamp {
+  line-height: 1.6; /* Adjust line height for better readability */
+  display: -webkit-box;
+  -webkit-line-clamp: none; /* Line clamping disabled since scrolling is allowed */
+  -webkit-box-orient: vertical;
+}
+
+.footers {
+  background-image: url('../../../public/footer/fotter_image.svg');
+  background-size: cover; 
+  background-position: center; 
+  width: 100%;
+  height: 100%;
+}
 .signin_button:hover {
   background-color: rgb(88, 82, 72);
 }
