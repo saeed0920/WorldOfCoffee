@@ -1,4 +1,5 @@
 import "../../../public/logo/logo.svg";
+import IdMaker from './Footer_id_maker';
 const Footer = () => {
   //i khow this is bullshit i khow  but how many i tried it didnt append my image to the footer with css
   const footerStyle = {
@@ -24,7 +25,8 @@ const Footer = () => {
                 </p>
               </div>
             </div>
-            <div className="flex flex-1 w-2/5">
+            <div className="flex flex-1 w-2/5 flex-col">
+            {IdMaker('RezaNezhadSalari','')}
             
             
             </div>

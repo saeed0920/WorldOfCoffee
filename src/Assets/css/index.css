@@ -38,7 +38,7 @@ a {
 .text-clamp {
   line-height: 1.6; /* Adjust line height for better readability */
   display: -webkit-box;
-  -webkit-line-clamp: none; /* Line clamping disabled since scrolling is allowed */
+  
   -webkit-box-orient: vertical;
 }
 
