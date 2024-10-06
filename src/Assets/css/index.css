@@ -54,8 +54,8 @@ a {
 }
 
 .header1 {
-  @apply text-coffee-brown text-5xl  font-bold;
+  @apply text-coffee-brown text-5xl lg:text-4xl font-bold md:text-3xl ph:text-xl;
 }
 .headerSub {
-  @apply text-lg text-gray-500 font-normal;
+  @apply text-lg text-gray-500 font-normal md:text-base ph:text-sm;
 }
