@@ -25,9 +25,11 @@ const Footer = () => {
                 </p>
               </div>
             </div>
-            <div className="flex flex-1 w-2/5 flex-col">
-            {IdMaker('RezaNezhadSalari','')}
-            
+            <div className="flex flex-1 w-2/5 gap-1    h-full flex-col">
+            {IdMaker('RezaNezhadSalari','https:/www.linkedin.com/in/reza-nezhadsalari/')}
+            {IdMaker('saeed0920','www.linkedin.com/in/saeed-dev')}
+            {IdMaker('AliAbbasiS','https://www.linkedin.com/in/ali-abbasi-836478233/')}
+
             
             </div>
           </div>

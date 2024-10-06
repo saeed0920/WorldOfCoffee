@@ -22,33 +22,33 @@ const IdMaker = (username: string, linkdin: string = "nothing") => {
   }, [username]);
 
   return (
-    <div className="flex gap-5  text-base text-white items-center justify-center lg:justify-evenly  ">
+    <div className="flex gap-5 text-nowrap	  text-base text-white  justify-center h-1/3  ">
       {avatarUrl ? (
         <img
           src={avatarUrl}
           alt={`${username}'s profile`}
-          className="rounded-full w-24 h-24" // Adjust size as needed
+          className="rounded-full w-16 h-16"
         />
       ) : (
         <p>Loading...</p>
       )}
-      <div className="flex flex-col  gap-2">
+      <div className="flex flex-col w-1/2  gap-2 ">
         {Name ? <span>{Name}</span> : <p>Loading...</p>}
         {GitHubUrl ? (
-          <a className="text-blue-400" href={GitHubUrl}>
+          <a className="text-blue-400 font-semibold break-words	" href={GitHubUrl}>
             github : {GitHubUrl}
           </a>
         ) : (
           <p>Loading...</p>
         )}
         {linkdin ? (
-          <button>
-            <a className="text-blue-400" href={linkdin}>
+          <button className="flex font-semibold justify-start items-start">
+            <a className="text-blue-400 break-words	" href={linkdin}>
               linkdin : {linkdin}
             </a>
           </button>
         ) : (
-          <p>nothing about linkdin profile sorry about that :/</p>
+          <p>nothing about linkdin profile sorry about thats :/</p>
         )}
       </div>
     </div>
