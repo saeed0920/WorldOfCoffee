@@ -1,9 +1,9 @@
-import "../../../public/logo/logo.svg";
+import "@public/logo/logo.svg";
 import IdMaker from './Footer_id_maker';
 const Footer = () => {
   //i khow this is bullshit i khow  but how many i tried it didnt append my image to the footer with css
   const footerStyle = {
-    backgroundImage: "url('../../../public/footer/fotter_image.svg')",
+    backgroundImage: "url('@public/footer/fotter_image.svg')",
     backgroundSize: "cover",
     backgroundPosition: "center",
     width: "100%",
@@ -13,7 +13,7 @@ const Footer = () => {
   return (
     <>
       <footer className="w-full h-96 bg-coffee-brown">
-        <div className="h-full w-full flex px-10 py-6" style={footerStyle}>
+        <div className="h-full w-full flex px-10 py-6 footers" >
           <div className="flex gap-5">
             <div className="flex flex-col w-2/5 justify-center text-white gap-5 ">
               <img src="../../../public/logo/logo.svg" className="w-1/2" alt="" />
