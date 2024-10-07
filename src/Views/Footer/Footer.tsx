@@ -6,11 +6,11 @@ const Footer = () => {
   const developers = [
     {
       username: "RezaNezhadSalari",
-      linkedinUrl: "https:/www.linkedin.com/in/reza-nezhadsalari/",
+      linkedinUrl: "https:/www.linkedin.com/in/reza-nezhadsalari-dev/",
     },
     {
       username: "saeed0920",
-      linkedinUrl: "www.linkedin.com/in/saeed-dev",
+      linkedinUrl: "https:/www.linkedin.com/in/saeed-dev/",
     },
     {
       username: "AliAbbasiS",
