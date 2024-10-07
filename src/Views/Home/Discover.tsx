@@ -21,7 +21,7 @@ export function Discover() {
   }, [coffeeList]);
 
   return (
-    <section className="flex w-full pt-40 gap-2 pb-20 md:flex-col lg:px-10 lg:py-10 mt-10">
+    <section className="flex w-full mt-20 pt-40 gap-2 pb-20 md:flex-col lg:px-12 lg:py-16 sm:px-4 sm:mt-16 ph:mt-4 ph:py-8">
       <div className="flex flex-col flex-1 gap-2 md:w-full ">
         <h1 className="flex flex-col playfair header1">{t("discover_h1")}</h1>
         <article className="pt-4 headerSub playfair">{t("discover_sub")}</article>

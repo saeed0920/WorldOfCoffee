@@ -14,7 +14,7 @@ function Template({ title, describe, img }: InferProps<typeof Template.propsType
         boxShadow="md"
         flexDirection="column"
         display="flex"
-        gap=".4rem"
+        gap=".2rem"
         borderRadius="md"
         overflow="hidden"
         backgroundColor="wheat"
@@ -33,11 +33,15 @@ function Template({ title, describe, img }: InferProps<typeof Template.propsType
           {title}
         </Heading>
         <Collapse in={isHover} startingHeight={1}>
-          <Box padding={{ sm: ".1rem .5rem", md: ".2rem .6rem" }}>
-            <Text fontSize={{ base: "smaller", ph: "small", sm: "medium" }} as="i">
-              {describe || t("default_describe_coffee")}
-            </Text>
-          </Box>
+          <Text
+            paddingY={{ base: ".2rem", ph: ".4rem", sm: ".8rem" }}
+            paddingX={{ base: ".4rem", ph: ".6rem", sm: ".8rem" }}
+            textAlign="center"
+            fontSize={{ base: "smaller", ph: "small", sm: "medium" }}
+            as="p"
+          >
+            {describe || t("default_describe_coffee")}
+          </Text>
         </Collapse>
       </Box>
     </>

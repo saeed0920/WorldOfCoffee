@@ -1,26 +1,37 @@
 import "@public/logo/logo.svg";
 import IdMaker from "./Footer_id_maker";
-import { Translation, useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next";
 const Footer = () => {
-  //i khow this is bullshit i khow  but how many i tried it didnt append my image to the footer with css
-  const {t}=useTranslation()
+  const { t } = useTranslation();
+  const developers = [
+    {
+      username: "RezaNezhadSalari",
+      linkedinUrl: "https:/www.linkedin.com/in/reza-nezhadsalari/",
+    },
+    {
+      username: "saeed0920",
+      linkedinUrl: "www.linkedin.com/in/saeed-dev",
+    },
+    {
+      username: "AliAbbasiS",
+      linkedinUrl: "https://www.linkedin.com/in/ali-abbasi-836478233/",
+    },
+  ];
   return (
     <>
-      <footer className="w-full h-96 bg-coffee-brown">
-        <div className="h-full w-full flex px-10 py-6 footers">
-          <div className="flex gap-5">
+      <footer className="w-full h-96 bg-coffee-brown lg:h-72">
+        <div className="h-full w-full flex px-10 py-6 lg:px-6 lg:py-4 md:px-4   footers">
+          <div className="flex gap-5 justify-center md:gap-2">
             <div className="flex flex-col w-2/5 justify-center text-white gap-5 ">
-              <img src="/logo/logo.svg" className="w-1/2" alt="" />
+              <img src="/logo/logo.svg" className="w-56" />
               <div className="text-container">
-                <p className="text-clamp">
-                 {t('footer_text')}
-                </p>
+                <p className="text-clamp headerSub !text-white">{t("footer_text")}</p>
               </div>
             </div>
-            <div className="flex flex-1 w-2/5 gap-1    h-full flex-col">
-              {IdMaker("RezaNezhadSalari", "https:/www.linkedin.com/in/reza-nezhadsalari/")}
-              {IdMaker("saeed0920", "www.linkedin.com/in/saeed-dev")}
-              {IdMaker("AliAbbasiS", "https://www.linkedin.com/in/ali-abbasi-836478233/")}
+            <div className="grid gap-2 grid-cols-3 items-center justify-center lg:grid-cols-2 sm:grid-cols-1">
+              {developers.map((person: { username: string; linkedinUrl: string }) => {
+                return <IdMaker username={person.username} linkedin={person.linkedinUrl} key={person.username} />;
+              })}
             </div>
           </div>
         </div>

@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { Link, Avatar } from "@chakra-ui/react";
+import { ExternalLinkIcon } from "@chakra-ui/icons";
 
-const IdMaker = (username: string, linkdin: string = "nothing") => {
+function IdMaker({ username, linkedin }: { username: string; linkedin: string }) {
   const [avatarUrl, setAvatarUrl] = useState("");
   const [Name, setName] = useState("");
   const [GitHubUrl, setGitHubUrl] = useState("");
@@ -23,29 +25,27 @@ const IdMaker = (username: string, linkdin: string = "nothing") => {
   }, [username]);
 
   return (
-    <div className="flex gap-5 text-nowrap	  text-base text-white  justify-center h-1/3  ">
-      {avatarUrl ? <img src={avatarUrl} alt={`${username}'s profile`} className="rounded-full w-16 h-16" /> : <p>Loading...</p>}
-      <div className="flex flex-col w-1/2  gap-2 ">
-        {Name ? <span>{Name}</span> : <p>{t("looding")}</p>}
+    <div className="flex gap-5 md:gap-2 text-base text-white p-2 rounded-md shadow-lg justify-center bg-coffee-brown/70 md:text-sm sm:text-xs hover:scale-110 transition-all hover:shadow-md ">
+      <Avatar size={{ base: "md", lg: "lg" }} name={username} src={avatarUrl} />
+      <div className="flex flex-col gap-2 md:gap-1">
+        {Name ? <span className="font-bold">{Name}</span> : <p>{t("loading")}</p>}
         {GitHubUrl ? (
-          <a className="text-blue-400 font-semibold break-words	" href={GitHubUrl}>
-            {t("github")}: {GitHubUrl}
-          </a>
+          <Link href={GitHubUrl} isExternal>
+            {t("github")} <ExternalLinkIcon mx="2px" />
+          </Link>
         ) : (
-          <p>{t("looding")}</p>
+          <p>{t("loading")}</p>
         )}
-        {linkdin ? (
-          <button className="flex font-semibold justify-start items-start">
-            <a className="text-blue-400 break-words	" href={linkdin}>
-              {t("linkdin")} : {linkdin}
-            </a>
-          </button>
+        {linkedin ? (
+          <Link href={linkedin} isExternal>
+            {t("linkedin")} <ExternalLinkIcon mx="2px" />
+          </Link>
         ) : (
-          <p>{t("linkdin_failed")}</p>
+          <p>{t("linkedin_failed")}</p>
         )}
       </div>
     </div>
   );
-};
+}
 
 export default IdMaker;
