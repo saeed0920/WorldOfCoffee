@@ -22,5 +22,10 @@
   "default_different_result": "Please select an option from both dropdown menus!",
   "404_button_return": "Let Go",
   "404_disc": "you are in our trap lets come back",
-  "404_header": "OPSS"
+  "404_header": "OPSS",
+  "footer_text": " We started this project as a group of passionate developers, driven by a shared love for technology and a desire to constantly challenge ourselves. As friends and collaborators, we are committed to improving our skills through innovative problem-solving and creating solutions that reflect our dedication to growth and learning.",
+  "linkdin_failed": "nothing about linkdin profile sorry about thats :/",
+  "looding": "Looding...",
+  "github": "github",
+  "linkdin": "linkdin"
 }
