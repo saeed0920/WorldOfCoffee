@@ -3,7 +3,7 @@ import HomeIntro from "./HomeIntro";
 import Navbar from "./Navbar";
 import coffee_image from "@public/header/coffee_image.jpg";
 import VersusCoffee from "./VersusCoffee";
-import Footer from "../Footer/Footer";
+import Footer from "@views/Footer/Footer";
 
 function Home() {
   return (

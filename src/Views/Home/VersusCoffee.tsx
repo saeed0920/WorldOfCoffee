@@ -105,7 +105,7 @@ const VersusCoffee = () => {
   }, [option1, option2, different, differentResult]);
 
   return (
-    <div className="versusCoffee_header flex flex-col mx-auto justify-center text-center py-4">
+    <div className="versusCoffee_header flex flex-col mx-auto justify-center w-full text-center py-4">
       <h2 className="playfair header1">{t("versusCoffeeHeader")}</h2>
       <p className="playfair headerSub pt-4">{t("versusCoffeeSub")}</p>
       <div className="mt-6">
@@ -114,7 +114,7 @@ const VersusCoffee = () => {
           className="grid justify-center items-start grid-cols-[20rem,25rem,20rem] lg:grid-cols-[18rem,18rem]  gap-4 lg:gap-2 sm:gap-1 sm:grid-cols-[10rem,10rem] ph:grid-cols-[8rem,8rem]"
           isLoaded={isLoading}
         >
-          <div className="flex flex-col gap-2 min-h-[30rem] lg:col-start-1 lg:min-h-[20rem] sm:min-h-[15rem] ph:min-h-0">
+          <div className="flex flex-col gap-2 min-h-[40rem] lg:col-start-1 lg:min-h-[20rem] sm:min-h-[15rem] ph:min-h-0">
             <Select
               size={{ base: "xs", ph: "sm", sm: "md" }}
               padding={{ base: "0" }}
@@ -142,7 +142,7 @@ const VersusCoffee = () => {
               {differentResult || t("default_different_result")}
             </Text>
           </Fade>
-          <div className="flex flex-col  min-h-[30rem] gap-2 lg:col-start-2 lg:min-h-[20rem] sm:min-h-[15rem] ph:min-h-0">
+          <div className="flex flex-col  min-h-[40rem] gap-2 lg:col-start-2 lg:min-h-[20rem] sm:min-h-[15rem] ph:min-h-0">
             <Select
               size={{ base: "xs", ph: "sm", sm: "md" }}
               textAlign="center"

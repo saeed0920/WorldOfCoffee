@@ -4,10 +4,12 @@
 name: Node.js CI
 
 on:
+  merge_group:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
   push:
     branches: ["main"]
-  # pull_request:
-  #   branches: [ "main" ]
 
 jobs:
   build:
