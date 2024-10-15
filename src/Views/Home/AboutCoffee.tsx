@@ -31,8 +31,14 @@ const AboutCoffee = () => {
     fetchData();
   }, []);
 
+  // دکمه "بعدی"
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % coffeeData.length);
+  };
+
+  // دکمه "قبلی"
+  const handleBack = () => {
+    setCurrentIndex((prevIndex) => (prevIndex === 0 ? coffeeData.length - 1 : prevIndex - 1));
   };
 
   if (loading) {
@@ -51,9 +57,17 @@ const AboutCoffee = () => {
 
   return (
     <div>
-      <h1>{currentCoffee.name}</h1>
-      <p>{currentCoffee.description}</p>
-      <button onClick={handleNext}>Next Coffee</button>
+      <h1 className="text-2xl text-coffee-brown text-center">{currentCoffee.name}</h1>
+      <p className="text-lg text-center my-3">{currentCoffee.description}</p>
+
+      <div className="flex justify-between my-8">
+        <button onClick={handleNext} style={{ left: "-3rem" }} className="p-5 rounded-md relative bg-late-white">
+          <img src="../.././public/footer/Vector11.svg" alt="" />
+        </button>
+        <button onClick={handleBack} style={{ right: "-3rem" }} className="p-5 relative rounded-md bg-late-white">
+          <img src="../.././public/footer/Vector1.svg" alt="" />
+        </button>
+      </div>
     </div>
   );
 };
