@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 interface CoffeeBean {
   id: number;
@@ -11,7 +12,7 @@ const AboutCoffee = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
-
+  const { t } = useTranslation();
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -31,26 +32,24 @@ const AboutCoffee = () => {
     fetchData();
   }, []);
 
-  // دکمه "بعدی"
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % coffeeData.length);
   };
 
-  // دکمه "قبلی"
   const handleBack = () => {
     setCurrentIndex((prevIndex) => (prevIndex === 0 ? coffeeData.length - 1 : prevIndex - 1));
   };
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <div>{t("looding")}</div>;
   }
 
   if (error) {
-    return <div>Error fetching data.</div>;
+    return <div>{t("error_api_describe")}</div>;
   }
 
   if (coffeeData.length === 0) {
-    return <div>No coffee data available.</div>;
+    return <div>{t("error_api_describe")}</div>;
   }
 
   const currentCoffee = coffeeData[currentIndex];
