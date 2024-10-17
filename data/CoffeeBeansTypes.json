@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "name": "Arabica",
+    "description": "Arabica is the most widely consumed coffee bean variety, known for its smooth, mild, and nuanced flavor profile. It often has sweet, fruity, and floral notes with a hint of acidity, which can range from crisp to wine-like. Arabica beans are grown at high altitudes, typically above 600 meters, and are more susceptible to pests and diseases, making them more expensive. They account for about 60-70% of global coffee production."
+  },
+  {
+    "id": 2,
+    "name": "Robusta",
+    "description": "Robusta beans are known for their strong, bold, and bitter flavor, often described as earthy or nutty with a hint of chocolate. They have nearly double the caffeine content of Arabica, giving them a harsher, more intense taste. Robusta is easier to grow, resistant to pests and diseases, and thrives at lower altitudes, which makes it more affordable. It is commonly used in espresso blends for its crema and in instant coffee."
+  },
+  {
+    "id": 3,
+    "name": "Liberica",
+    "description": "Liberica is a rare variety of coffee bean, known for its unique smoky, woody, and floral flavors, with a somewhat fruity undertone. The beans themselves are irregular in size and shape, which contributes to their distinctive aroma and taste. Liberica is mainly grown in Southeast Asia, particularly in the Philippines, and represents only a small percentage of the world’s coffee production. It is considered an acquired taste due to its bold, unusual flavor profile."
+  },
+  {
+    "id": 4,
+    "name": "Excelsa",
+    "description": "Excelsa is a variety of Liberica, but it has a very different flavor profile, often described as tart and fruity with a more complex, layered taste. It is used primarily in coffee blends to add depth and a mysterious twist to the flavor. Excelsa beans are grown in Southeast Asia and are relatively rare. The beans are smaller and rounder compared to other varieties, and they are often roasted dark to highlight their fruity and wine-like characteristics."
+  },
+  {
+    "id": 5,
+    "name": "Maragogipe",
+    "description": "Maragogipe, also known as 'Elephant Bean' due to its unusually large size, is a mutation of the Arabica bean. It has a mild and delicate flavor with a smooth body and low acidity, often characterized by floral and fruity notes. Maragogipe beans are rare and highly prized, especially in regions like Central and South America, where they are primarily grown."
+  },
+  {
+    "id": 6,
+    "name": "Bourbon",
+    "description": "Bourbon is a variety of Arabica that is cherished for its rich, sweet flavor profile. It often features complex notes of caramel, chocolate, and red fruit. Bourbon beans are known for their high-quality yield and are grown in countries like Brazil, Rwanda, and Burundi. The plant is more susceptible to diseases, which makes its production limited and more costly."
+  },
+  {
+    "id": 7,
+    "name": "Typica",
+    "description": "Typica is one of the oldest and most foundational Arabica varieties. It is known for producing high-quality coffee with clean, sweet flavors, often accompanied by fruity or floral notes. While Typica plants have lower yields compared to other varieties, they are still sought after for their excellent cup quality, particularly in specialty coffee markets."
+  },
+  {
+    "id": 8,
+    "name": "Catuai",
+    "description": "Catuai is a hybrid coffee variety derived from the Mundo Novo and Caturra plants. It is known for its high yields and resistance to wind and weather conditions. Catuai beans typically have a balanced flavor profile, with moderate acidity and sweetness, and are commonly grown in Brazil and Central America."
+  },
+  {
+    "id": 9,
+    "name": "SL28",
+    "description": "SL28 is a coffee variety known for its drought resistance and its ability to produce exceptionally high-quality beans. Originating in Kenya, SL28 is prized for its bright acidity, juicy fruit notes, and rich body. The flavor is often complex, with citrus, berry, and wine-like characteristics. It is a favorite among specialty coffee producers."
+  },
+  {
+    "id": 10,
+    "name": "Geisha",
+    "description": "Geisha (or Gesha) is one of the most expensive and sought-after coffee varieties, known for its exceptional and complex flavor profile. Originating from Ethiopia and now grown in countries like Panama, Geisha beans are famous for their floral aroma, vibrant acidity, and unique tasting notes that include jasmine, tropical fruit, and bergamot. Geisha beans have won numerous awards in coffee competitions and are considered a luxury among coffee connoisseurs."
+  }
+]

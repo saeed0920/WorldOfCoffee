@@ -4,6 +4,7 @@ import Navbar from "./Navbar";
 import coffee_image from "@public/header/coffee_image.jpg";
 import VersusCoffee from "./VersusCoffee";
 import Footer from "@views/Footer/Footer";
+import AboutBeans from "./AboutBeans";
 
 function Home() {
   return (
@@ -17,6 +18,7 @@ function Home() {
         <HomeIntro />
         <Discover />
         <VersusCoffee />
+        <AboutBeans />
       </div>
       <Footer />
     </div>
