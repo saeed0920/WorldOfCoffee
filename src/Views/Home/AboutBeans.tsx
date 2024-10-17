@@ -17,7 +17,7 @@ const AboutBeans = () => {
           <h2 className="text-center text-2xl font-bold text-coffee-brown">{t("jonnynames")}</h2>
           <span className="text-center text-coffee-brown">{t("jonnysjob")}</span>
           <div className="flex justify-center ">
-            <img style={{ top: "5rem" }} className="w-28 relative h-28 " src="../.././public/footer/bipedar.png" alt="" />
+            <img style={{ top: "5rem" }} className="w-28 relative h-28 " src="footer/bipedar.png" />
           </div>
         </div>
       </div>

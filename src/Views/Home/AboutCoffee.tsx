@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { ArrowForwardIcon, ArrowBackIcon } from "@chakra-ui/icons";
 
 interface CoffeeBean {
   id: number;
@@ -61,10 +62,10 @@ const AboutCoffee = () => {
 
       <div className="flex justify-between my-8">
         <button onClick={handleNext} style={{ left: "-3rem" }} className="p-5 rounded-md relative bg-late-white">
-          <img src="../.././public/footer/Vector11.svg" alt="" />
+          <ArrowBackIcon boxSize={6} />
         </button>
         <button onClick={handleBack} style={{ right: "-3rem" }} className="p-5 relative rounded-md bg-late-white">
-          <img src="../.././public/footer/Vector1.svg" alt="" />
+          <ArrowForwardIcon boxSize={6} />
         </button>
       </div>
     </div>

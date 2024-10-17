@@ -4,7 +4,7 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      colors: { "coffee-brown": "#603809", "late-white": "#F9C06A","Low_yellow":"#FFF9F1" ,"Low_Yellow_border":"#F9C06A6B"},
+      colors: { "coffee-brown": "#603809", "late-white": "#F9C06A", Low_yellow: "#FFF9F1", Low_Yellow_border: "#F9C06A6B" },
     },
     screens: {
       xl: { max: "81.25em" },
